@@ -3,7 +3,7 @@ import numpy as np
 
 # Using readlines()
 file1 = open('django_current_cc.md', 'r')
-Lines = file1.readlines()
+lines = file1.readlines()
  
 count = 0
 # Strips the newline character
@@ -12,7 +12,7 @@ report_dict = {}
 # {'filename': {'block_name': [block_type, num_lines, letter_grade, score]}}
 score_list = []
 
-for line in Lines:
+for line in lines:
     count += 1
     # print("Line{}: {}".format(count, line.strip()))
     line = line.strip()
